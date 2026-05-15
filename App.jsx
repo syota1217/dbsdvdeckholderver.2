@@ -116,15 +116,17 @@ function DeckList({ decks, onNew, onEdit, onDetail, onDel }) {
     <div>
       <div style={S.toolbar}>
         <input value={q} onChange={e => setQ(e.target.value)} placeholder="🔍 デッキ名で検索..." style={S.searchInput} />
-        <Btn accent onClick={onNew}>＋ 新規デッキ</Btn>
       </div>
       {filtered.length === 0
-        ? <Empty icon="🃏" text="デッキがありません。新規デッキを作成しましょう！" />
+        ? <Empty icon="🃏" text="デッキがありません。下のボタンから作成しましょう！" />
         : filtered.map(d => (
           <DeckCard key={d.id} deck={d} onClick={() => onDetail(d)}
             onEdit={() => onEdit(d)} onDel={() => { if (confirm("削除しますか？")) onDel(d.id); }} />
         ))
       }
+      <StickyFooter>
+        <button onClick={onNew} style={S.saveBtn}>＋ 新規デッキを作成</button>
+      </StickyFooter>
     </div>
   );
 }
