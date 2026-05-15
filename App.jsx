@@ -1051,14 +1051,13 @@ function SmBtn({ children, onClick, blue, red }) {
 function StickyFooter({ children }) {
   return (
     <div style={{
-      position: "sticky",
+      position: "fixed",
       bottom: 0,
       left: 0,
       right: 0,
-      zIndex: 50,
-      padding: "12px 0 calc(12px + env(safe-area-inset-bottom))",
-      background: "linear-gradient(to top, rgba(255,251,240,1) 60%, rgba(255,251,240,0))",
-      marginTop: 12,
+      zIndex: 100,
+      padding: "10px 16px calc(10px + env(safe-area-inset-bottom))",
+      background: "linear-gradient(to top, #fffbf0 55%, transparent)",
     }}>
       {children}
     </div>
@@ -1084,8 +1083,8 @@ function BG() {
 
 /* ─── STYLES ────────────────────────────────────────── */
 const S = {
-  root:      { minHeight: "100vh", background: "linear-gradient(160deg,#fffbf0 0%,#fff8e1 40%,#f0f6ff 100%)", color: "#1a1a2e", fontFamily: "'Noto Sans JP',sans-serif", position: "relative", overflowX: "hidden" },
-  wrap:      { position: "relative", zIndex: 1, maxWidth: 860, margin: "0 auto", padding: "0 14px calc(120px + env(safe-area-inset-bottom))" },
+  root:      { minHeight: "100dvh", background: "linear-gradient(160deg,#fffbf0 0%,#fff8e1 40%,#f0f6ff 100%)", color: "#1a1a2e", fontFamily: "'Noto Sans JP',sans-serif", position: "relative" },
+  wrap:      { position: "relative", zIndex: 1, maxWidth: 860, margin: "0 auto", padding: "0 14px calc(140px + env(safe-area-inset-bottom))" },
   header:    { padding: "20px 0 0", marginBottom: 22, borderBottom: "2px solid rgba(230,160,0,.25)" },
   hInner:    { display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginBottom: 14 },
   title:     { fontFamily: "Rajdhani,sans-serif", fontSize: 22, fontWeight: 700, background: "linear-gradient(90deg,#d97706,#f59e0b,#dc2626)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", letterSpacing: 2, lineHeight: 1.1 },
