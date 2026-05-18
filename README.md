@@ -1,6 +1,36 @@
-# 🐉 DBSDV Deck Builder
-Dragon Ball Super Divers デッキ管理・大会記録アプリ
-
-## GitHub Pages デプロイ
-1. このZIPを展開した中身をGitHubリポジトリにアップロード
-2. Settings → Pages → main / /(root) → Save
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="DBSDV" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#fffbf0" />
+  <title>DBSDV Deck Builder</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./icons/icon-180.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./icons/icon-152.png" />
+  <link rel="apple-touch-icon" sizes="167x167" href="./icons/icon-167.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { height: 100%; overscroll-behavior: none; background: #fffbf0; }
+    body { height: 100%; font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif; -webkit-overflow-scrolling: touch; overscroll-behavior: none; }
+    #root { min-height: 100dvh; }
+    button, a, select, input { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+    input, select, textarea { font-size: 16px !important; }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+  <script type="module" crossorigin src="./assets/index-mpAlVA_P.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
